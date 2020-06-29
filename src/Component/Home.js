@@ -39,7 +39,7 @@ class Home extends React.Component {
           console.log(e);
           if (e.over) {
             this.setState({
-              Component: 'ThankYou'
+              Component: 'EventPage'
             });
           } else {
             if (e.start === true) {
