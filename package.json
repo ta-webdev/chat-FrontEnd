@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
+    "express-http-to-https": "^1.1.4",
     "chartjs-plugin-datalabels": "^0.7.0",
     "hls.js": "^0.13.3-canary.5639",
     "input-moment": "^0.4.0",
