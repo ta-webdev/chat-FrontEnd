@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'ZurichBT-RomanCondensed';
+  src: url('ZurichBT-RomanCondensed.eot?#iefix') format('embedded-opentype'),  url('ZurichBT-RomanCondensed.otf')  format('opentype'),
+	     url('ZurichBT-RomanCondensed.woff') format('woff'), url('ZurichBT-RomanCondensed.ttf')  format('truetype'), url('ZurichBT-RomanCondensed.svg#ZurichBT-RomanCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

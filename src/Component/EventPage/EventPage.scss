@@ -1,0 +1,118 @@
+.EventPage{
+
+    .cross-con{
+        display: none;
+        background-color: #000;
+        width: 100%;
+    }
+
+    .banner{
+
+        .chat-box{
+            overflow-y: scroll;
+
+            .cross{
+                display: none;
+            }
+        }
+
+        .chat-box > div{
+            visibility: visible ;
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px)  {
+    .EventPage{
+
+        .cross-con{
+            p{
+                color: white;
+                margin-right: 2% !important;
+            }
+            
+            display: block;
+        }
+        .banner{
+
+            .video-holder{
+                width: 100% !important;
+            }
+
+            .chat-box{
+                position: absolute;
+                width: 100% !important;
+                opacity: 0.9;
+
+                .cross{
+                    display: block;
+                    color: white;
+                    width: 80%;
+                    margin: 0;
+                    padding: 0;
+                    text-align: end;
+                    height: 4%;
+                }
+
+                
+            }
+
+            .chat-box > div{
+                height: 92%;
+
+                iframe{
+                    height: 98% !important;
+                }
+            }
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .EventPage{
+
+        .cross-con{
+            display: none !important;
+        }
+
+        .banner{
+
+            .video-holder{
+                width: 65% !important;
+            }
+
+            .chat-box{
+                width: 35% !important;
+                position: relative;
+                
+
+                .cross{
+                    display: none;
+                }
+
+                
+            }
+
+            .chat-box > div{
+                visibility: visible ;
+                height: 100%;
+
+                iframe{
+                    height: 98% !important;
+                }
+            }
+        }
+
+        .hide{
+            display: block !important;
+        }
+    }
+}

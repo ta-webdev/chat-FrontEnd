@@ -1,0 +1,105 @@
+.WaitingPage{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .content-holder{
+        height: 80vh;
+        
+        .event-logo-holder{
+            max-width: 600px;
+        }
+
+        .go-live-holder{
+            height: 60%;
+            width: 80%;
+            
+            .go-live-img-holder{
+                height: 30%;
+                max-width: 700px;
+            }
+
+            .timer-holder{
+                width: 400px;
+                height: 100px;
+                max-width: 100%;
+                .timer-bg{
+                    img{
+                        position: absolute;
+                    }
+                    .timer-text{
+                        width: 400px;
+                        max-width: 100%;
+                    }
+                    .timer-text .time div{
+                        font-size: 2rem;
+
+                    }
+                    .timer-text .time-desc div{
+                        font-size: 1.5rem
+                    }
+                }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage{
+        .content-holder{ 
+            .go-live-holder{
+                .timer-holder{
+                    .timer-bg{
+                        .timer-text .time div{
+                            font-size: 1.5rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage{
+        .content-holder{
+            .event-logo-holder{
+                max-width: 300px;
+            }
+    
+            .go-live-holder{
+                
+                .go-live-img-holder{
+                    height: 40%;
+                    max-width: 700px;
+                }
+    
+                .timer-holder{
+                    width: 200px;
+                    height: 75px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 200px;
+                        }
+                        .timer-text .time div{
+                            font-size: 1rem;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 0.8rem
+                        }
+                    }
+                }
+            }
+         }
+    }
+}

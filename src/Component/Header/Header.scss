@@ -1,0 +1,40 @@
+.Header{
+    height: 20vh;
+    top: 0;
+    z-index: 10;
+    
+    .Image {
+        height: 80%;
+        max-width: 33%;
+        width: auto;    
+    }
+
+    div:first-child{
+        img{
+            object-position: left;
+        }
+    }
+    
+    div:last-child{
+        img{
+            object-position: right;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .Header{
+       .Image{
+           width: 40% !important;
+       }
+    }
+}
+
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .Header{
+       .Image{
+           width: 20% !important;
+       }
+    }
+}

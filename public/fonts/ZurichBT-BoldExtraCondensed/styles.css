@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'ZurichBT-BoldExtraCondensed';
+  src: url('ZurichBT-BoldExtraCondensed.eot?#iefix') format('embedded-opentype'),  url('ZurichBT-BoldExtraCondensed.otf')  format('opentype'),
+	     url('ZurichBT-BoldExtraCondensed.woff') format('woff'), url('ZurichBT-BoldExtraCondensed.ttf')  format('truetype'), url('ZurichBT-BoldExtraCondensed.svg#ZurichBT-BoldExtraCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

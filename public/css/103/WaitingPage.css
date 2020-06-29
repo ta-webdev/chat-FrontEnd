@@ -1,0 +1,197 @@
+ /* images */
+ .header_logo_img{
+     content:url("https://d1dh2gmk2293v.cloudfront.net/waiting_headerlogo.png")
+ }
+ .goLiveImg{
+    width:80%;
+    content:url("https://d1dh2gmk2293v.cloudfront.net/waiting_going_live_in.png");
+    }
+
+.clockbg{
+    background-color: #17279000;
+    width: 20vw;
+    content:url("https://d1dh2gmk2293v.cloudfront.net/coun_down.svg");
+
+}
+
+
+.sideimgLeft{
+    height: 100%;
+    content:url("https://d1dh2gmk2293v.cloudfront.net/waiting_logo_l.png");
+
+    width: 30%;
+}
+.sideimgRight{
+    height: 100%;
+    width: 30%;
+    content:url("https://d1dh2gmk2293v.cloudfront.net/waiting_logo_r.png");
+}
+ 
+ .waiting_welcomeHeader{
+    display: inline;
+    background-image:url("https://d1dh2gmk2293v.cloudfront.net/waiting_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.waiting_header-logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.sideimagesHeading_waiting{
+    display:flex;
+    justify-content: space-between;
+
+}
+.Waiting_socialDistancing_logo{
+    text-align: center;
+}
+.marginBottom{
+    bottom:5%
+}
+
+.waiting_welcomeContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.clockArea{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    bottom: 14.5vh;
+    height: 13vh;
+}
+
+.Clockcount{
+   position: absolute;
+    z-index: 300;
+    justify-content: space-evenly;
+    display: flex;
+    min-width: 20%;
+    height: 100%;
+    align-items: center;
+    transform: translateX(5%);
+}
+
+.Clockcount > span{
+ 
+    font-size: 4.5rem;
+    font-family: 'Digital-7';
+    letter-spacing: 10px;
+    color: #01DDFF;
+}
+.Clock-indi{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom:14.5vh;
+}
+.hrmin{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.hrmin > span{
+  font-size: 2rem; 
+  font-weight: 600;
+  color:white;   
+  font-family: 'futureBoldContesa';
+}
+
+
+@media screen and (max-width:500px ){
+    .Clockcount {
+       
+        transform: translateX(5%)!important;
+    }
+    .marginBottom{
+        bottom:0;
+    }
+
+    .hrmin{
+        width: 62%!important    ;
+       
+    }
+    .clockbg{
+        width: 70vw!important;
+    }
+    .hrmin > span{
+        font-size: 1.7rem!important; 
+      }
+    
+}
+
+
+@media screen and (max-width:1280px ){
+    .Clockcount {
+       
+        transform: translateX(8%);
+    }
+    .marginBottom{
+        bottom:0;
+    }
+
+    .hrmin{
+        width: 26%;
+       
+    }
+    .clockbg{
+        background-color: #17279000;
+        width: 38vw;
+    }
+    
+}
+@media screen and (min-width:2200px ){
+    .clockbg{
+        /* background-color: #17279000; */
+        width: 45vw !important;
+    }
+    .Clockcount > span{
+ 
+        font-size: 10rem;
+        font-family: 'Digital-7';
+        letter-spacing: 10px;
+        color: #01DDFF;
+    }
+    .hrmin > span{
+        font-size: 5rem!important; 
+      }
+    
+    
+}
+
+
+@media screen  and (orientation: landscape) and (max-width:800px ){
+    
+    .clockbg{
+        /* background-color: #17279000; */
+        width: 45vw !important;
+    }
+    .Clockcount > span{
+ 
+        font-size: 2.5rem;
+        font-family: 'Digital-7';
+        letter-spacing: 10px;
+        color: #01DDFF;
+    }
+    .hrmin > span{
+        font-size: 1.7rem!important; 
+      }
+    
+}
+/* bro desktop pimages done */

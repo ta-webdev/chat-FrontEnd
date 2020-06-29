@@ -1,0 +1,1195 @@
+.WaitingPage.Event105{
+    .Header{
+        justify-content: center !important;
+        align-items: flex-start !important;
+        .Image{
+            max-width: 100%;
+            img{
+                object-position: top;
+                height: 100%;
+                max-width: 800px;
+            }
+        }
+    }
+    .content-holder{
+        height: 90vh;
+        .go-live-holder{        
+            .go-live-img-holder{
+                background-image: url("https://d1dh2gmk2293v.cloudfront.net/110/tint.png");
+                background-size: contain;
+                background-repeat: no-repeat; 
+                background-position: center;
+                height: 60%;
+                max-width: 100%;
+                .going-live-img img{
+                    max-width: 50%;
+                }
+            }
+
+            .timer-holder{
+                width: 450px;
+                max-width: 100%;
+                font-family: 'Digital-7';
+                height: 170px;
+
+                .timer-bg{
+                    img{
+                        position: absolute;
+                        height: 170px;
+                    }
+                    .timer-text{
+                        position: absolute;
+                        width: 300px;
+                        max-width: 100%;
+                    }
+                    .timer-text {
+                        div{
+                            padding: 0 !important;
+                        }
+                        .time div{
+                            font-size: 3rem;
+                        }
+                        .time-desc div{
+                            font-size: 2rem
+                        }
+                    }
+                     
+                }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event105{
+        .content-holder{ 
+            .go-live-holder{
+                width: 100%;
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                        }
+                        .timer-text .time div{
+                            font-size: 1.3rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event105{
+        .content-holder{
+            .event-logo-holder{
+                max-width: 300px;
+            }
+    
+            .go-live-holder{
+                
+                .go-live-img-holder{
+                    height: 40%;
+                    max-width: 700px;
+                }
+    
+                .timer-holder{
+                    width: 200px;
+                    height: 75px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 200px;
+                        }
+                        .timer-text .time div{
+                            font-size: 1rem;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 0.8rem
+                        }
+                    }
+                }
+            }
+         }
+    }
+}
+
+// EVENT 106
+.WaitingPage.Event106{
+    .Header{
+        justify-content: center !important;
+        align-items: flex-start !important;
+        .Image{
+            max-width: 100%;
+            img{
+                object-position: top;
+                height: 100%;
+                max-width: 800px;
+            }
+        }
+    }
+    .content-holder{
+        height: 90vh;
+        justify-content: space-evenly !important;
+        .event-logo-holder{
+            max-width: 100% !important;
+        }
+        .event-theme-logo img{
+            max-width: 90%;
+        }
+        .go-live-holder{  
+            width: 100% !important;      
+            .go-live-img-holder{
+                background-image: url("https://d1dh2gmk2293v.cloudfront.net/106/tint.png");
+                background-size: 200%;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%;
+                height: 60%;
+                max-width: 100%;
+                .going-live-img img{
+                    max-width: 60%;
+                }
+            }
+
+            .timer-holder{
+                width: 450px;
+                max-width: 100%;
+                font-family: 'Digital-7';
+                height: 170px;
+
+                .timer-bg{
+                    img{
+                        position: absolute;
+                        height: 170px;
+                    }
+                    .timer-text{
+                        position: absolute;
+                        width: 300px;
+                        max-width: 100%;
+                    }
+                    .timer-text {
+                        div{
+                            padding: 0 !important;
+                        }
+                        .time div{
+                            font-size: 3rem;
+                        }
+                        .time-desc div{
+                            font-size: 2rem
+                        }
+                    }
+                     
+                }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event106{
+        .Header{
+            .Image{
+               width: 65% !important;
+            }
+        }
+        .content-holder{ 
+            
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    .going-live-img img{
+                        max-width: 90%;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                        }
+                        .timer-text .time div{
+                            font-size: 1.3rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event106{
+        .Header{
+            .Image{
+               width: 40% !important;
+            }
+        }
+        .content-holder{
+            .event-logo-holder{
+                max-width: 300px;
+            }
+            .event-theme-logo img{
+                max-width: 85%;
+            }
+            .go-live-holder{
+                
+                .go-live-img-holder{
+                    height: 40%;
+                    max-width: 700px;
+                    .going-live-img img{
+                        max-width: 100%;
+                    }
+                }
+    
+                .timer-holder{
+                    width: 200px;
+                    height: 75px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 200px;
+                        }
+                        .timer-text .time div{
+                            font-size: 1rem;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 0.8rem
+                        }
+                    }
+                }
+            }
+         }
+    }
+}
+
+// EVENT 107
+.WaitingPage.Event107{
+    height: 100%;
+    width: 100%;
+    .content-holder{
+        height: 100vh;
+        .event-logo-holder{
+            max-width: 1100px;
+            width: 50%;
+        }
+        .go-live-holder{  
+            .go-live-img-holder{
+                height: 65%;
+                max-width: 1280px;
+                width: 75%;
+            }
+        }
+     }
+}
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event107{
+        .content-holder{
+            height: 100vh;
+            .event-logo-holder{
+                width: 90%;
+            }
+
+            .go-live-holder{
+                height: 60%;
+                width: 100%;
+                
+                .go-live-img-holder{
+                    height: 50%;
+                    width: 95%;
+                }
+                .timer-holder{
+                    width: 300px;
+                    height: 100px;
+                    max-width: 100%;
+                
+                }
+            }
+            
+         }
+      
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event107{
+       
+        .content-holder{
+            height: 100vh;
+            .event-logo-holder{
+                width: 60%;
+            }
+
+            .go-live-holder{
+                height: 60%;
+                width: 100%;
+               
+                .timer-holder{
+                    .timer-bg{
+                        .timer-text{
+                            width: 300px;
+                        }
+                        .timer-text .time div{
+                            font-size: 1rem;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 0.8rem
+                        }
+                    }
+
+                }
+            }
+            
+         }
+    }
+}
+
+// EVENT 108
+.WaitingPage.Event108 {
+    width: 100%;
+    height: 100%;
+
+    .Header {
+        justify-content: flex-end !important;
+        .Image {
+            max-width: 100%;
+            width: 10%;
+            height: 100%;
+        }
+    }
+
+    .content-holder {
+        height: 100vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            max-width: 40% !important;
+            .Image{
+                max-width: 90%;
+            }
+        }
+
+        .go-live-holder {
+            .go-live-img-holder{
+                max-width: 75%;
+                width: 75%;
+                height: auto;
+            }
+
+            .timer-holder {
+                font-family: 'Digital-7';
+                height: auto;
+
+                .timer-bg {                  
+                    img{
+                        visibility: hidden;
+                    }
+                    .timer-text {
+                        position: absolute;
+                        width: 300px;
+                    }
+
+                    .timer-text {
+                        div {
+                            padding: 0 !important;
+                            color: #F70301;
+                        }
+
+                        .time div {
+                            font-size: 5rem;
+                        }
+
+                        .time-desc div {
+                            font-size: 2rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .WaitingPage.Event108 {
+        .Header {
+            .Image {
+                width: 15% !important;
+            }
+        }
+
+        .content-holder {
+            .event-logo-holder {
+                max-width: 80% !important;
+                height: 25vh;
+            }
+
+            .go-live-holder {
+                width: 120%;
+                justify-content: center !important;
+                height: 40vh;
+
+                .go-live-img-holder {
+                    .going-live-img img {
+                        max-width: 90%;
+                    }
+                }
+
+                .timer-holder {
+                    width: 275px;
+                    height: 90px;
+
+                    .timer-bg {
+                        .timer-text {
+                            width: 230px;
+                        }
+
+                        .timer-text .time div {
+                            font-size: 3.1rem;
+                        }
+
+                        .timer-text .time-desc div {
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .WaitingPage.Event108 {
+        .Header {
+            .Image {
+                width: 25% !important;
+            }
+        }
+
+        .content-holder {
+            .event-logo-holder{
+                max-width: 80% !important;
+                height: 25vh;
+            }
+            .go-live-holder {
+                width: 120%;
+                justify-content: center !important;
+                height: 40vh;
+
+                .go-live-img-holder {
+                    .going-live-img img {
+                        max-width: 90%;
+                    }
+                }
+
+                .timer-holder {
+                    width: 275px;
+                    height: 90px;
+
+                    .timer-bg {
+                        .timer-text {
+                            width: 230px;
+                        }
+
+                        .timer-text .time div {
+                            font-size: 3.1rem;
+                        }
+
+                        .timer-text .time-desc div {
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .WaitingPage.Event108 {
+        .Header {
+            .Image {
+                width: 40% !important;
+            }
+        }
+
+        .content-holder {
+            .event-logo-holder {
+                max-width: 300px !important;
+            }
+
+            .go-live-holder {
+                justify-content: end !important;
+                .go-live-img-holder {
+                    height: 60%;
+                    max-width: 700px;
+
+                    .going-live-img img {
+                        max-width: 100%;
+                    }
+                }
+
+                .timer-holder {
+                    width: 200px;
+                    height: 60px;
+
+                    .timer-bg {
+                        .timer-text {
+                            width: 200px;
+                        }
+
+                        .timer-text .time div {
+                            font-size: 1.5rem;
+
+                        }
+
+                        .timer-text .time-desc div {
+                            font-size: 1.2rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// EVENT 109
+.WaitingPage.Event109{
+    .Header{
+        justify-content: flex-end !important;
+        .Image{
+                width: 7%;
+                margin-right: 20px;
+        }
+    }
+    .content-holder{
+        height: 90vh;
+        justify-content: space-around !important;
+        .event-logo-holder{
+            width: 800px;
+            max-width: 100% !important;
+        }
+        .event-theme-logo img{
+            max-width: 90%;
+        }
+        .go-live-holder{  
+            width: 100% !important;      
+            .go-live-img-holder{
+                background-image: url("https://d1dh2gmk2293v.cloudfront.net/109/tint.jpg");
+                background-size: contain;
+                background-repeat: repeat; 
+                background-position: center;
+                width: 100%;
+                height: 70%;
+                max-width: 100%;
+                .going-live-img img{
+                    max-width: 80%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .timer-holder {
+                font-family: 'Digital-7';
+                height: auto;
+
+                .timer-bg {                  
+                    img{
+                        visibility: hidden;
+                    }
+                    .timer-text {
+                        position: inherit;
+                        width: 300px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .timer-text {
+                        div {
+                            padding: 0 !important;
+                            color: #FFAC06;
+                        }
+
+                        .time div {
+                            font-size: 5rem;
+                        }
+
+                        .time-desc div {
+                            font-size: 2rem;
+                        }
+                    }
+
+                }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 1376px) {
+    .WaitingPage.Event109{
+        .Header{
+            .Image{
+               width: 17% !important;
+            }
+        }
+        .content-holder{ 
+            justify-content: space-evenly !important;
+            .event-logo-holder{
+                max-width: 600px;
+            }
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    background-repeat: no-repeat;
+                    .going-live-img img{
+                        max-width: 90%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event109{
+        .Header{
+            .Image{
+               width: 20% !important;
+            }
+        }
+        .content-holder{ 
+            justify-content: center !important;
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    background-repeat: no-repeat;
+                    .going-live-img img{
+                        max-width: 90%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event109{
+        .Header{
+            .Image{
+               width: 40% !important;
+            }
+        }
+        .content-holder{
+            justify-content: space-around !important;
+            .event-logo-holder{
+                width: 400px;
+                max-width: 400px;
+            }
+            
+            .go-live-holder{
+                
+                .go-live-img-holder{
+                    height: 40%;
+                    max-width: 900px;
+                    background-repeat: repeat;
+                    .going-live-img img{
+                        max-width: 100%;
+                    }
+                }
+    
+                .timer-holder{
+                    width: 200px;
+                    height: 75px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 2.3rem;
+                            white-space: nowrap;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.4rem;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+         }
+    }
+}
+
+// EVENT 110
+.WaitingPage.Event110{
+    .Header{
+        .Image{
+                width: 7%;
+                margin-right: 20px;
+        }
+    }
+    .content-holder{
+        height: 90vh;
+        justify-content: space-around !important;
+        .event-logo-holder{
+            width: 800px;
+            max-width: 100% !important;
+        }
+        .event-theme-logo img{
+            max-width: 90%;
+        }
+        .go-live-holder{  
+            width: 100% !important;      
+            .go-live-img-holder{
+                background-size: cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+                width: 100%;
+                height: 70%;
+                max-width: 100%;
+                .going-live-img img{
+                    max-width: 80%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .timer-holder {
+                font-family: 'Digital-7';
+                height: auto;
+
+                .timer-bg {                  
+                    img{
+                        visibility: hidden;
+                    }
+                    .timer-text {
+                        margin-top: 0;
+                        width: 300px;
+                    }
+
+                    .timer-text {
+                        div {
+                            padding: 0 !important;
+                            color: white;
+                        }
+
+                        .time div {
+                            font-size: 5rem;
+                        }
+
+                        .time-desc div {
+                            font-size: 2rem;
+                        }
+                    }
+
+                }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 1376px) {
+    .WaitingPage.Event110{
+        .Header{
+            .Image{
+               width: 17% !important;
+            }
+        }
+        .content-holder{ 
+            justify-content: space-evenly !important;
+            .event-logo-holder{
+                max-width: 600px;
+            }
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    background-repeat: no-repeat;
+                    .going-live-img img{
+                        max-width: 90%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin-top: 5%;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event110{
+        .Header{
+            .Image{
+               width: 20% !important;
+            }
+        }
+        .content-holder{ 
+            justify-content: center !important;
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    background-repeat: no-repeat;
+                    .going-live-img img{
+                        max-width: 90%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event110{
+        .Header{
+            .Image{
+               width: 40% !important;
+            }
+        }
+        .content-holder{
+            justify-content: space-around !important;
+            .event-logo-holder{
+                width: 400px;
+                max-width: 400px;
+            }
+            
+            .go-live-holder{
+                
+                .go-live-img-holder{
+                    height: 40%;
+                    max-width: 900px;
+                    background-repeat: repeat;
+                    .going-live-img img{
+                        max-width: 100%;
+                    }
+                }
+    
+                .timer-holder{
+                    width: 200px;
+                    height: 75px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 2.3rem;
+                            white-space: nowrap;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.4rem;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+         }
+    }
+}
+
+// EVENT 111
+.WaitingPage.Event111{
+    
+    .Header{
+        height: 7vh;
+        justify-content: flex-end !important;  
+    }
+
+    .content-holder{
+        height: 93vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder{
+            width: 600px;
+            max-width: 100% !important;
+        }
+
+        
+        .go-live-holder{  
+            width: 100% !important;
+            height: 70% !important;
+
+            .go-live-img-holder{
+                background-size: contain;
+                background-repeat: repeat; 
+                background-position: center;
+                width: 100%;
+                max-width: 90%;
+                justify-content: flex-start !important;
+
+                .going-live-img img{
+                    max-width: 80%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .timer-holder {
+                font-family: 'Digital-7';
+                height: auto;
+
+                .timer-bg {                  
+                    img{
+                        visibility: hidden;
+                    }
+
+                    .timer-text {
+                        position: inherit;
+                        width: 300px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .timer-text {
+                        
+                        div {
+                            padding: 0 !important;
+                        }
+
+                        .time div {
+                            font-size: 5rem;
+                            color: #596066;
+                        }
+
+                        .time-desc div {
+                            font-size: 2rem;
+                            color: #4890ce;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .footer-img-holder{
+            bottom: 0;
+        }
+     }
+}
+
+@media only screen and (max-width: 1376px) {
+    .WaitingPage.Event111{
+        .Header{
+            .Image{
+               width: 40% !important;
+            }
+        }
+        .content-holder{ 
+            justify-content: space-evenly !important;
+            .event-logo-holder{
+                max-width: 600px;
+            }
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    background-repeat: no-repeat;
+                    .going-live-img img{
+                        max-width: 90%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event111{
+        .Header{
+            .Image{
+               width: 100% !important;
+               max-width: 80%;
+            }
+        }
+        .content-holder{ 
+            justify-content: center !important;
+            .go-live-holder{
+                width: 100%;
+                .go-live-img-holder{
+                    background-repeat: no-repeat;
+                    max-width: 100%;
+                    .going-live-img img{
+                        max-width: 100%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    width: 275px;
+                    height: 90px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event111{
+        .Header{
+            .Image{
+               width: 40% !important;
+            }
+        }
+        .content-holder{
+            justify-content: space-around !important;
+            .event-logo-holder{
+                width: 300px;
+                max-width: 400px;
+            }
+            
+            .go-live-holder{
+                
+                .go-live-img-holder{
+                    height: 30%;
+                    max-width: 700px;
+                    background-repeat: repeat;
+                    .going-live-img img{
+                        max-width: 100%;
+                    }
+                }
+    
+                .timer-holder{
+                    width: 200px;
+                    height: 60px;
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 2.3rem;
+                            white-space: nowrap;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.4rem;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+         }
+    }
+}
+
+// IphoneSE only
+@media only screen and (min-width: 560px) and (max-width: 568px) and (orientation: landscape){
+    
+    .WaitingPage.Event111{
+
+        .content-holder{
+            
+            .event-logo-holder{
+                width: 250px;
+            }
+
+            .go-live-holder{
+
+                .go-live-img-holder{
+                    height: 28%;
+                }
+            }
+        }
+    }
+}

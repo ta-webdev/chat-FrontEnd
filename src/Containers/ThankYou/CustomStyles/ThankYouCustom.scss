@@ -1,0 +1,561 @@
+.ThankYou.Event105{
+    height: 100%;
+    width: 100%;
+    .Header{
+        justify-content: center !important;
+        align-items: flex-start !important;
+        .Image{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            img{
+                object-position: top;
+                height: 100%;
+                max-width: 800px;
+            }
+        }
+    }
+    .content-holder{
+        height: 90vh;
+        
+    }
+    .thankyou-image-holder{
+        background-image: url(https://d1dh2gmk2293v.cloudfront.net/rc-tint.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+        .thankyou-image img{
+            width: 50%;
+            max-height: 75%;
+        }
+    }
+}
+@media only screen and (max-width: 1376px) {
+	.ThankYou.Event105{
+        .Header{
+            .Image{
+                img{
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 880px)  {
+    .ThankYou.Event105{
+        .content-holder{
+            justify-content: center !important;
+        }
+        .thankyou-image-holder{
+            height: 35% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .ThankYou.Event105{
+        .thankyou-image-holder{
+            height: 40% !important;
+            .Image img{
+                width: 40%;
+            }
+        }
+    }
+}
+
+// EVENT 106
+.ThankYou.Event106{
+    height: 100%;
+    width: 100%;
+    .Header{
+        justify-content: center !important;
+        align-items: flex-start !important;
+        .Image{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            img{
+                object-position: top;
+                height: 100%;
+                max-width: 800px;
+            }
+        }
+    }
+    .content-holder{
+        height: 90vh;
+        justify-content: center !important;
+        .event-logo-holder{
+            width: 100%;
+        }
+    }
+    .event-theme-logo{
+        max-width: 80%;
+    }
+    .thankyou-image-holder{
+        margin-top: 0.5%;
+        background-image: url(https://d1dh2gmk2293v.cloudfront.net/tint_106.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+        .thankyou-image img{
+            width: 40%;
+            max-height: 75%;
+        }
+    }
+}
+@media only screen and (max-width: 1376px) {
+	.ThankYou.Event106{
+        .Header{
+            .Image{
+                img{
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 880px)  {
+    .ThankYou.Event106{
+        .Header{
+            .Image{
+               width: 65% !important;
+            }
+        }
+        .thankyou-image-holder{
+            height: 35% !important;
+            background-size: 200%;
+            .thankyou-image img{
+                width: 60%;
+            }
+        }
+        .event-theme-logo{
+            max-width: 90%;
+        }
+    }
+}
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .ThankYou.Event106{
+        .Header{
+            .Image{
+               width: 40% !important;
+            }
+        }
+        .event-theme-logo{
+            max-width: 80%;
+        }
+    }
+}
+
+// Event 107
+.ThankYou.Event107{
+    height: 100%;
+    width: 100%;
+    .content-holder{
+        height: 98vh;
+        justify-content: center !important;
+        .event-logo-holder{
+            width: 100%;
+        }
+    }
+    .event-theme-logo{
+        max-width: 60%;
+    }
+    .thankyou-image-holder{
+        max-width: 1280px;
+        height: 60%;
+        width: 65%;
+       
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .ThankYou.Event107{
+        .event-theme-logo{
+            max-width: 90%;
+        }
+        .thankyou-image-holder{
+            max-width: 800px;
+            height: 80%;
+            width: 90%;
+        }
+    }
+}
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .ThankYou.Event107{
+        .content-holder{
+            height: 100vh; 
+        }
+        .event-theme-logo{
+            max-width: 65%;
+        }
+        .thankyou-image-holder{
+            max-width: 800px;
+            height: 60%;
+            width: 70%;
+        }
+    }
+}
+
+// Event 108
+.ThankYou.Event108 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        justify-content: flex-end !important;
+        .Image{
+            max-width: 100%;
+            width: 10%;
+            height: 100%;
+        }
+    }
+    
+    .content-holder {
+        height: 100vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            width: 100%;
+            .Image{
+                max-width: 50%;
+            }
+        }
+    }
+
+    .thankyou-image-holder {
+        width: 100%;
+        max-width: inherit;
+        height: auto;
+        .Image{
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event108 {
+        .Header {
+            .Image {
+                width: 15%;
+            }
+        }
+        .event-logo-holder{
+            height: 20vh;
+        }
+        .thankyou-image-holder{
+            height: 50vh !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event108 {
+     .Header{
+         .Image {
+             width: 30% !important;
+            }
+        }
+        
+        .event-logo-holder{
+            height: 20vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 50vh !important;
+            width: 150% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event108 {
+        .content-holder {
+            height: 100vh;
+        }
+
+        .event-theme-logo {
+            max-width: 65%;
+        }
+
+        .thankyou-image-holder {
+            max-width: 800px;
+            height: 60%;
+            width: 70%;
+        }
+    }
+}
+
+// Event 109
+.ThankYou.Event109 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        justify-content: flex-end !important;
+        .Image{
+            margin-right: 20px;
+            max-width: 100%;
+            width: 7%;
+            height: 100%;
+        }
+    }
+    
+    .content-holder {
+        height: 90vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            width: 100%;
+        }
+    }
+
+    .thankyou-image-holder {
+        background-image: url(https://d1dh2gmk2293v.cloudfront.net/109/tint.jpg);
+        margin-top: 0.5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+        height: 60%;
+        .Image{
+            max-height: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event109 {
+        .Header {
+            .Image {
+                width: 20% !important;
+                height: 50%;
+            }
+        }
+        .event-logo-holder{
+            height: 20vh;
+        }
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event109 {
+
+     .Header{
+         .Image {
+             width: 30% !important;
+            }
+      }  
+        
+        .event-logo-holder{
+            height: 30vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 40vh ;
+            width: 150% ;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event109 {
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+
+// Event 110
+.ThankYou.Event110 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        .Image{
+            margin: 20px;
+            max-width: 100%;
+            width: 10%;
+            height: 100%;
+        }
+    }
+    
+    .content-holder {
+        height: 80vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            width: 100%;
+        }
+    }
+
+    .thankyou-image-holder {
+        margin-top: 0.5%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+        height: 60%;
+        .Image{
+            max-height: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event110 {
+
+        .Header{
+            .Image{
+                width: auto;
+            }
+        }
+
+        .event-logo-holder{
+            height: 20vh;
+        }
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+// Ipad 
+@media only screen and (min-width: 760px) and (max-width: 768px) {
+
+    .ThankYou.Event110{
+
+        .Header{
+            .Image{
+                margin: 2rem 2rem 0rem 2rem;
+                width: 20% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event110 {
+
+     .Header{
+         .Image {
+             width: 25% !important;
+            }
+        }  
+        .content-holder{
+            height: 90vh;
+        }
+        .event-logo-holder{
+            height: 30vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 40vh;
+            width: 150%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event110 {
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+
+// Event 111
+.ThankYou.Event111 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        justify-content: flex-end !important;
+        height: 7vh;
+        .Image{
+            width: 30%;
+        }
+    }
+    
+    .content-holder {
+        height: 93vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            width: 100%;
+        }
+
+        .footer-img-holder{
+            bottom: 0;
+        }
+    }
+
+    .thankyou-image-holder {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event111 {
+        .Header {
+            .Image {
+                width: 20% !important;
+                height: 50%;
+            }
+        }
+        .event-logo-holder{
+            height: 20vh;
+        }
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event111 {
+
+     .Header{
+         .Image {
+             width: 100% !important;
+             max-width: 80%;
+            }
+      }  
+        
+        .event-logo-holder{
+            height: 30vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 40vh ;
+            width: 150% ;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event111 {
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}

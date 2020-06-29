@@ -1,0 +1,158 @@
+[
+    {
+        "template": {
+            "eventId": 105,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/rc-bg1.jpg",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/rc-icici-logo.png"
+                ]
+            },
+            "thankYou": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/rc-logo.png",
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/rc-ty.png"
+            },
+            "waiting": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/rc_waiting_themelog.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/rc_waiting_goinglive.png",
+                "timerBg": "https://d1dh2gmk2293v.cloudfront.net/rc_timer.png",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/rc-tint.png"
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 106,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/106/bg.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/106/partner.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/106/full_log_unit.png"
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/ty_106.png"
+            },
+            "waiting": {
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/106/live_in.png",
+                "timerBg": "https://d1dh2gmk2293v.cloudfront.net/106/count_bg.png",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/106/tint.png"
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 107,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/107/bg.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/107/eventlogo_thankyou.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    ""
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/107/thankyou.png"
+            },
+            "waiting": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/107/event_logo.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/107/live_in.png",
+                "timerBg": "https://d1dh2gmk2293v.cloudfront.net/107/count_bg.png",
+                "tintImg": ""
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 108,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/108/bg_ty.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/lg.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/108/logo_1.png"
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/108/ty.png"
+            },
+            "waiting": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/lg.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/108/live_in.png",
+                "timerBg": " ",
+                "tintImg": ""
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 109,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/109/bg_1.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/109/event_theme_logo.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/109/bayer_logo.png"
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/109/ty.png"
+            },
+            "waiting": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/109/event_theme_logo.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/109/gli_1.png",
+                "timerBg": " ",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/109/tint.jpg"
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 110,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/110/bg.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/110/white-text.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/110/airtel-logo.png",
+                    "https://d1dh2gmk2293v.cloudfront.net/110/our-time-logo.png"
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/110/ty.png",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/110/tint.png"
+            },
+            "waiting": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/110/white-text.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/110/gli_1.png",
+                "timerBg": " ",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/110/tint.png"
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 111,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/111/bg-1.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/111/event_logo.png",
+            "footerImg" :"https://d1dh2gmk2293v.cloudfront.net/111/footerImg.png",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/111/text-img.png"
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/111/ty.png",
+                "tintImg": " "
+            },
+            "waiting": {
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/111/event-logo-gli.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/111/gli-1.png",
+                "timerBg": " ",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/111/tint.png"
+            }
+        }
+    }
+]

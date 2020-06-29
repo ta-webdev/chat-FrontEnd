@@ -1,0 +1,24 @@
+.Image {
+    height: 100%;
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Image {
+
+        img{
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }     
+}

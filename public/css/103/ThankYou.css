@@ -1,0 +1,155 @@
+/* Images.... */
+.top-logo{
+    content:url("https://d1dh2gmk2293v.cloudfront.net/thanku_logo_middle.png");
+}
+.left-logo{
+    content: url("https://d1dh2gmk2293v.cloudfront.net/thanku_logo_left.png");
+}
+.right-logo{
+    content: url("https://d1dh2gmk2293v.cloudfront.net/thanku_logo_right.png");
+}
+.center-thankYou-img{
+    content: url("https://d1dh2gmk2293v.cloudfront.net/thankyou.png");
+}
+.ThankYou{
+    background-image: url('https://d1dh2gmk2293v.cloudfront.net/thanku_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+header > div {
+    flex: 0 0 44.33%;
+    max-width: 45.33%;
+}
+.ThankYou_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ThankYou_header_container{
+    flex-direction: column;
+    justify-content: start;
+    height: 20vh;
+}
+.ThankYou_left_right_logo{
+    justify-content: space-between;
+}
+header > section{
+    margin-top: -3%;
+}
+
+.w-100{
+    width: 100%;
+}
+.ThankYou_main_con{
+    height: 55vh;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 800px) {
+    .ThankYou_icici_img{
+        width: 30%;
+    }
+    header > div {
+        flex: 0 0 40.33%;
+        max-width: 50.33%;
+    }
+    header > section {
+        margin-top: -5%;
+    }
+    .center-thankYou-img{
+        width: 85%;
+    }
+}
+/* Tab Screen */
+@media only screen and (max-width: 1400px) and (orientation: landscape) {
+    .ThankYou_icici_img{
+        width: 35%;
+    }
+    header > div {
+        flex: 0 0 48.33%;
+        max-width: 40.33%;    
+    }
+    header > section {
+        margin-top: -2%;
+    }
+    .center-thankYou-img{
+        width: 65%;
+    }
+}
+/* Ipad Sscreen */
+@media only screen and (min-device-width : 900px) and (max-device-width : 1024px)  { 
+    .ThankYou_icici_img{
+        width: 35%;
+    }
+    header > div {
+        flex: 0 0 48.33%;
+        max-width: 40.33%;    
+    }
+    header > section {
+        margin-top: -2%;
+    }
+    .center-thankYou-img{
+        width: 65%;
+    }
+}
+/* Mobile Screens */
+@media only screen and (max-width: 600px) {
+    .ThankYou_icici_img{
+        width: 35%;
+    }
+    header > div {
+        flex: 0 0 33.33%;
+        max-width: 65.33%;    
+    }
+    header > section {
+        margin-top: 0%;
+    }
+  }
+  @media only screen and (max-height: 600px) and (orientation: landscape)  {
+    .ThankYou_icici_img{
+        width: 35%;
+    }
+    header > div {
+        flex: 0 0 48.33%;
+        max-width: 40.33%;    
+    }
+    header > section {
+        margin-top: -2%;
+    }
+    .center-thankYou-img{
+        width: 60%;
+    }
+  }
+  @media only screen and (max-height: 900px) and (orientation: landscape)  {
+    .ThankYou_icici_img{
+        width: 35%;
+    }
+    header > div {
+        flex: 0 0 48.33%;
+        max-width: 40.33%;    
+    }
+    header > section {
+        margin-top: -2%;
+    }
+    .center-thankYou-img{
+        width: 62%;
+    }
+    .ThankYou_main_con{
+        height: 68vh;
+    }
+  }
+  @media only screen and (min-width : 800px) and (max-width : 812px) and (orientation : landscape) {
+      .ThankYou_main_con{
+          height: 75%;
+      }
+  }
