@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import io from 'socket.io-client';
 import { endPoint } from '../socket/allSockets';
 import { sendMessage } from '../socket/allSockets';
@@ -8,7 +8,6 @@ import $ from 'jquery';
 
 import Hls from "hls.js"
 import Plyr from "plyr"
-import "./EventPage/EventPage.scss";
 
 class EventPage extends React.Component {
   constructor(props) {
@@ -25,28 +24,14 @@ class EventPage extends React.Component {
       b: '',
       c: '',
       d: '',
-      isShow: false
+      overlayState: true,
+      playState: false,
+      landingVideoUrl: this.props.videoUrl
     }
-
-    this.handleChange = this.handleChange.bind(this)
-  }
-
-  handleChange = e => {
-    
-    this.setState( prev => ({...prev, isShow : !prev.isShow}))
-    this.state.isShow ? $(".chat-box").removeClass('hide') : $(".chat-box").addClass('hide');
-    this.state.isShow ? e.target.innerHTML = '&#10006;' : e.target.innerHTML = '&#9868;' ; 
+    this.handleVideoStart = this.handleVideoStart.bind(this)
   }
 
   componentDidMount() {
-
-    const script = document.createElement("script");
-
-    script.src = "https://rumbletalk.com/client/?LmpDFTTl";
-    script.async = true;
-
-    document.body.appendChild(script);
-
     this.hidePopup();
     const socket = io(endPoint, {transports: ['websocket']});
     socket.on('CurrentPoll', (resp) => {
@@ -66,7 +51,6 @@ class EventPage extends React.Component {
         this.hidePopup();
       }
     });
-    this.handlePlayer()
   }
 
  handlePlayer = () => {
@@ -172,17 +156,26 @@ class EventPage extends React.Component {
     })
   }
 
+  handleVideoStart() {
+    $("#player").attr("src", this.state.landingVideoUrl)
+    this.setState({playState : true})
+  }
+
+  handleVideoEnd() {
+    if(this.state.overlayState) {
+      this.handlePlayer()
+      this.setState({overlayState : false})
+    }
+  }
+
   render() {
     return (
       <>
         <section className="EventPage">
-          <div className="cross-con text-right">
-            <p className="cross-icon p-0 m-0" onClick={this.handleChange}>&#10006;</p>
-          </div>
-          <div className="banner background-Black d-flex align-items-center justify-content-center">
-          <div className="video-holder w-75 h-100 d-flex align-items-center justify-content-center">
-            <video height="90%" width="100%" preload="none" id="player" autoPlay controls crossOrigin="true"></video>
-          </div>
+          <div className="banner background-Black">
+            { this.state.overlayState && !this.state.playState && <img src="https://img.icons8.com/officel/256/000000/circled-play.png" className="position-absolute play-btn" onClick={() => this.handleVideoStart()}
+            /> }
+            { <video height="90%" width="100%" preload="none" onEnded={() => this.handleVideoEnd()} id="player"  autoPlay={true} controls={!this.state.overlayState} ></video>} 
             {/* <iframe
               id="ytplayer"
               type="text/html"
@@ -194,17 +187,14 @@ class EventPage extends React.Component {
               allow="fullscreen"
             >
             </iframe> */}
-            <div className="chat-box w-25 h-100 ">
-              
-              <div className="chat" id="rt-59d18f9e057175a6278ca02932d94499"></div>
-            </div>
+            
           </div>
           <div className="blackOverlay">
             <div className="actionArea">
               <div style={{ float: "right" }} className="font25 pointer" onClick={(e) => this.hidePopup()}>
                 <svg className="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd" />
-                  <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd" />
+                  <path fillRule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clipRule="evenodd" />
+                  <path fillRule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clipRule="evenodd" />
                 </svg>
               </div>
               <div className="poll">
@@ -246,7 +236,7 @@ class EventPage extends React.Component {
                     Ask your question
                   </h2>
                   <form className="bottomForm" onSubmit={(e) => this.sendMessage(e)}>
-                    <textarea name="Message" maxlength="250" value={this.state.Message} onChange={(e) => this.onChange(e)} placeholder="Please type your relevant question"></textarea>
+                    <textarea name="Message" maxLength="250" value={this.state.Message} onChange={(e) => this.onChange(e)} placeholder="Please type your relevant question"></textarea>
                     <div className="marginSide">
                       <input type="submit" className="btn" value="submit" />
                     </div>

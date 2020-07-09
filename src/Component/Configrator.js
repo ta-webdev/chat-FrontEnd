@@ -26,10 +26,12 @@ class Configrator extends React.Component {
       Ans4: '',
       startDateTime: '',
       endDateTime: '',
-      streamUrl: ''
+      streamUrl: '',
+      landingVideoUrl: ''
     }
 
     this.handleUrlChange = this.handleUrlChange.bind(this)
+    this.handleVideoUrlChange = this.handleVideoUrlChange.bind(this)
   }
 
   onSetStartDataTime = startDateTime => {
@@ -44,6 +46,11 @@ class Configrator extends React.Component {
   handleUrlChange(e) {
     const { value } = e.target
     this.setState(prev => ({ ...prev, streamUrl : value }))
+  }
+
+  handleVideoUrlChange(e) {
+    const { value } = e.target
+    this.setState(prev => ({ ...prev, landingVideoUrl : value }))
   }
   
   onSetStartTime = () => {
@@ -85,15 +92,29 @@ class Configrator extends React.Component {
       })
   }
 
+  onSetLandingVideoUrl = () => {
+    if (!window.confirm('Do you want to change media url?')) return '';
+
+    putAPI('event/landingVideoUrl/1',{videoUrl : this.state.landingVideoUrl.trim()})
+      .then(e => {
+        if(e.data.message == "updated"){
+          alert('Media Url is Updated Successfully....')
+        }else{
+          alert("Try Again!");
+        }
+      })
+  }
+
   componentDidMount() {
     // Fetch Time From DB
     getPublicAPI('event/event/1')
       .then( e => {
         if(e.data.data.endTime){
-          const { time, endTime, url } = e.data.data;
+          const { time, endTime, url, videoUrl } = e.data.data;
           this.onSetStartDataTime(new Date(time))
           this.onSetEndDataTime(new Date(endTime))
           this.setState({ streamUrl : url})       
+          this.setState({ landingVideoUrl : videoUrl})       
         }else{
           this.onSetStartDataTime(new Date(e.data.data.time))
         }
@@ -342,6 +363,14 @@ class Configrator extends React.Component {
                   <input type="text" className="col-md-12 text-dark text-left p-0" placeholder="Enter Your Stream Url" onChange={this.handleUrlChange} value={this.state.streamUrl}/>
                 </div>
                 <button type="button" onClick={(e) => this.onSetStreamUrl()} className="col-md-5 btn btn-success">Set Stream Url</button>
+              </div>
+
+              {/* Landing Video Url */}
+              <div className="form-group d-flex align-items-center justify-content-center my-md-1">
+                <div className="col-md-7">
+                  <input type="text" className="col-md-12 text-dark text-left p-0" placeholder="Enter Your Stream Url" onChange={this.handleVideoUrlChange} value={this.state.landingVideoUrl}/>
+                </div>
+                <button type="button" onClick={(e) => this.onSetLandingVideoUrl()} className="col-md-5 btn btn-success">Set Media Url</button>
               </div>
               {/* Start and End Event Buttons*/}
               <h3>Event Start/End</h3> 

@@ -559,3 +559,237 @@
         }
     }
 }
+
+
+// Event 114
+.ThankYou.Event114 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        .Image{
+            width: 30%;
+        }
+    }
+    .Header > div:nth-child(2){
+        height: 100%;
+    }
+    
+    .content-holder {
+        justify-content: flex-start !important;
+
+        .event-logo-holder{
+            display: none !important;
+        }
+    }
+
+    .thankyou-image-holder {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event114 {
+        .Header {
+            .Image {
+                width: 20% !important;
+                height: 50%;
+            }
+        }
+        
+        .thankyou-image-holder{
+            height: 50vh;
+            width: 150%;
+            max-width: 150%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event114 {
+
+     .Header{
+         .Image {
+             width: 100% !important;
+            }
+      }  
+        
+        .event-logo-holder{
+            height: 30vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 50vh ;
+            width: 150% ;
+            max-width: 150%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event114 {
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+// Event 115
+.ThankYou.Event115 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        .Image{
+            width: 25%;
+        }
+    }
+    
+    
+    .content-holder {
+        justify-content: flex-start !important;
+
+        .event-logo-holder{
+           position: absolute;
+           top: 16%;
+           height: 20vh;
+        }
+        .thankyou-image-holder{
+            height: 80%;
+        }
+    }
+
+    .thankyou-image-holder {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event115 {
+        .Header {
+            .Image {
+                width: 20% !important;
+                height: 50%;
+            }
+        }
+        
+        .thankyou-image-holder{
+            height: 50vh;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) { 
+    .ThankYou.Event115 {
+
+     .Header{
+         .Image {
+             width: 100% !important;
+            }
+      }  
+        
+        .event-logo-holder{
+            height: 30vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 50vh ;
+            width: 100% ;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event115 {
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+// Event 113
+.ThankYou.Event113 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        justify-content: flex-end !important;
+        align-items: flex-start !important;
+        height: auto;
+    }
+    
+    .content-holder {
+        height: 95vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            .Image{
+                max-width: 700px;
+            }
+        }
+    }
+
+    .thankyou-image-holder {
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        .Image{
+            max-height: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event113 {
+        
+        .event-logo-holder{
+            height: 30vh;
+        }
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event113 {
+
+     .Header{
+         .Image {
+             width: 30% !important;
+            }
+      }  
+        
+        .event-logo-holder{
+            height: 30vh;
+        }
+        
+        .thankyou-image-holder{
+            height: 40vh ;
+            width: 100% ;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event113 {
+
+        .thankyou-image-holder{
+            height: 50vh;
+        }
+    }
+}

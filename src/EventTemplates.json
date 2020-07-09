@@ -57,6 +57,7 @@
                 "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/107/thankyou.png"
             },
             "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/107/bg.jpg",
                 "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/107/event_logo.png",
                 "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/107/live_in.png",
                 "timerBg": "https://d1dh2gmk2293v.cloudfront.net/107/count_bg.png",
@@ -68,18 +69,17 @@
         "template": {
             "eventId": 108,
             "bg": "https://d1dh2gmk2293v.cloudfront.net/108/bg_ty.jpg",
-            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/lg.png",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/tt.png",
             "footerImg" :"",
             "header": {
-                "imgUrl": [
-                    "https://d1dh2gmk2293v.cloudfront.net/108/logo_1.png"
-                ]
+                "imgUrl": [ ]
             },
             "thankYou": {
                 "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/108/ty.png"
             },
             "waiting": {
-                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/lg.png",
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/108/bg_ty.jpg",
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/tt.png",
                 "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/108/live_in.png",
                 "timerBg": " ",
                 "tintImg": ""
@@ -101,6 +101,7 @@
                 "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/109/ty.png"
             },
             "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/109/bg_1.jpg",
                 "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/109/event_theme_logo.png",
                 "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/109/gli_1.png",
                 "timerBg": " ",
@@ -125,6 +126,7 @@
                 "tintImg": "https://d1dh2gmk2293v.cloudfront.net/110/tint.png"
             },
             "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/110/bg.jpg",
                 "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/110/white-text.png",
                 "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/110/gli_1.png",
                 "timerBg": " ",
@@ -148,10 +150,81 @@
                 "tintImg": " "
             },
             "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/111/bg-1.jpg",
                 "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/111/event-logo-gli.png",
                 "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/111/gli-1.png",
                 "timerBg": " ",
                 "tintImg": "https://d1dh2gmk2293v.cloudfront.net/111/tint.png"
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 113,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/113/BG.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/113/event-logo.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [
+                    "https://d1dh2gmk2293v.cloudfront.net/113/header.png"
+                ]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/113/ty-1.png",
+                "tintImg": ""
+            },
+            "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/113/BG.jpg",
+                "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/113/event-logo.png",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/113/gli-1.png",
+                "timerBg": "https://d1dh2gmk2293v.cloudfront.net/113/timer-bg.png",
+                "tintImg": ""
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 114,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/114/BG.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/108/tranparent.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [ "https://d1dh2gmk2293v.cloudfront.net/114/raid.png",
+                "https://d1dh2gmk2293v.cloudfront.net/114/iifl-logo.png"]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/114/ty.png",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/114/tint.png"
+            },
+            "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/114/bg-2.jpg",
+                "eventThemeLogo": "",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/114/gli-1.png",
+                "timerBg": "https://d1dh2gmk2293v.cloudfront.net/114/timer-bg.png",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/114/tint.png"
+            }
+        }
+    },
+    {
+        "template": {
+            "eventId": 115,
+            "bg": "https://d1dh2gmk2293v.cloudfront.net/115/bg.jpg",
+            "eventThemeLogo": "https://d1dh2gmk2293v.cloudfront.net/115/event-theme-logo.png",
+            "footerImg" :"",
+            "header": {
+                "imgUrl": [ "https://d1dh2gmk2293v.cloudfront.net/115/logo-1.png",
+                "https://d1dh2gmk2293v.cloudfront.net/115/logo-2.png"]
+            },
+            "thankYou": {
+                "thankYouImg": "https://d1dh2gmk2293v.cloudfront.net/115/ty.png",
+                "tintImg": "https://d1dh2gmk2293v.cloudfront.net/115/tint.png"
+            },
+            "waiting": {
+                "bg": "https://d1dh2gmk2293v.cloudfront.net/115/bg-1.jpg",
+                "eventThemeLogo": "",
+                "goingLiveImg": "https://d1dh2gmk2293v.cloudfront.net/115/gli.png",
+                "timerBg": "",
+                "tintImg": ""
             }
         }
     }

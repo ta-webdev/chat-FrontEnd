@@ -187,10 +187,18 @@ textarea{
     background-color:rgba(0,0,0,0.3);
 } */
 
-.banner img{
+/* .banner img{
     display: block;
     width:100%;
     height:100%;
+} */
+
+.play-btn {
+    height: 100px;
+    width: 100px;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
+    z-index: 1;
 }
 
 .actionArea{
@@ -202,7 +210,7 @@ textarea{
     top:50%;
     transform: translate(-50%,-50%);
     background-color:rgba(255,255,255,0.9);
-
+    z-index: 2;
     padding:30px 20px;
     
 }
@@ -903,13 +911,12 @@ form{
     }
     
     .actionArea{
-        position: static;
-        height: 100%;
+        position: absolute;
+        height: auto;
         background-color:#333;
         max-width: 100%;
         width: 100%;
         padding:40px 0;
-        transform: none;
         border-radius: 0;
     }
     .poll, .questionBox{
@@ -920,7 +927,7 @@ form{
     }
    .space{padding:20px 0px 0 ;}
    .questionBox .space{padding:0 20px;}
-   h3{font-size: 15px;}
+   h3{font-size: 11px;}
     form,.bottomForm{max-width: 350px;margin: 20px 35px 0;}
     .menu a{
             color:#fff;
@@ -933,6 +940,9 @@ form{
     .questionBox h2{display: block;margin-top:0; border-color:#dfdfdf;}
     textarea{background-color:transparent;}
     header img{max-height: 60px;}
+    .form-group{
+        margin: 0;
+    }
 }
 /* Ajit */
 
@@ -1162,3 +1172,15 @@ iframe{
 }
 
 }
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .actionArea{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .form-group{
+        margin: 0;
+    }
+    .form-group .choice, .form-group .choice label{
+        min-height: 40px;
+    }
+  }

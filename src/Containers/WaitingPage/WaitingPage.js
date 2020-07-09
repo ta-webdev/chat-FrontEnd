@@ -4,9 +4,9 @@ import Image from "../../Component/Image/Image"
 import "./WaitingPage.scss"
 import "./CustomStyles/WaitingPageCustom.scss"
 import EventTemplates from "../../EventTemplates.json";
+import moment from "moment"
 
 const WaitingPage = props => {
-    const [dayState, setDays] = useState(0);
     const [hourState, setHour] = useState(0);
     const [minState, setMins] = useState(0);
     const [secState, setSecs] = useState(0);
@@ -20,8 +20,7 @@ const WaitingPage = props => {
         }
         EventTemplates.map(t => t.template.eventId === parseInt(props.EventId) && setEventTemplate(t.template));
         const myInterval = setInterval(() => {
-            let { hours, minutes, days, secs } = startTimer(props.Time);
-            setDays(days)
+            let { hours, minutes, secs } = countdownTimer(props.Time);
             setHour(hours)
             setMins(minutes)
             setSecs(secs)
@@ -31,39 +30,27 @@ const WaitingPage = props => {
         }, 1000);
     }, [props])
 
-    const startTimer = date => {
-        let Current = new Date();
-        let cDate = new Date(date);
-      
-        let r = cDate.getTime() - Current.getTime();
-        r = r / 1000;
-      
-        var days = Math.floor(r / (60 * 60 * 24));
-        r -= days * (60 * 60 * 24);
-      
-        // calculate (and subtract) whole hours
-        var hours = Math.floor(r / (60 * 60));
-        r -= hours * (60 * 60);
-      
-        // calculate (and subtract) whole minutes
-        var minutes = Math.floor(r / 60) % 60;
-        r -= minutes * 60;
+    const countdownTimer = date => {
+        let dueDate = new Date(date); //getting this value from the API
+        
+        let eventTime = moment(dueDate, 'YYYY-MM-DD HH:mm:ss a');
+        const hours = moment.duration(eventTime - moment()).asHours();
+        const hInt = Math.floor(hours);
+        const minutes = moment.duration(60 * (hours - hInt), 'minutes').asMinutes();
+        const mInt = Math.floor(minutes);
+        const seconds = moment.duration(60 * (minutes - mInt), 'seconds').asSeconds();
+        const sInt = Math.floor(seconds);
 
-        // calculate (and subtract) whole minutes
-        var seconds = Math.floor(r / 60 * 60) % 60;
-        r -= seconds * 60;
-      
-        return {
-          days: (isNaN(days)) ? 0 : days,
-          hours: (isNaN(hours)) ? 0 : hours,
-          minutes: (isNaN(minutes)) ? 0 : minutes,
-          secs: (isNaN(seconds)) ? 0 : seconds,
-        }
-    }
+            return {
+                hours: (isNaN(hInt)) ? 0 : hInt,
+                minutes: (isNaN(mInt)) ? 0 : mInt,
+                secs: (isNaN(sInt)) ? 0 : sInt,
+            }
+        };
         
 
     return(
-        <div className={`WaitingPage ${eventStyling}`} style={ eventTemplate && {backgroundImage : `url(${eventTemplate.bg})`}}>
+        <div className={`WaitingPage ${eventStyling}`} style={ eventTemplate && {backgroundImage : `url(${eventTemplate.waiting.bg})`}}>
             <Header headerImages={eventTemplate && eventTemplate.header.imgUrl}/>
             <div className="content-holder w-100 d-flex align-items-center justify-content-around flex-column" >
                 <div className="event-logo-holder">

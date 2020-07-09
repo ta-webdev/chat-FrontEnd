@@ -17,11 +17,11 @@ class Home extends React.Component {
       Url: '',
       Time: '',
       EventId: '',
+      videoUrl: ''
     }
   }
 
   componentDidMount() {
-
     const query = new URLSearchParams(this.props.location.search);
     let event = query.get('eventId');
     let user = query.get('userId');
@@ -36,7 +36,6 @@ class Home extends React.Component {
           this.setState({
             Time: e.time
           });
-          console.log(e);
           if (e.over) {
             this.setState({
               Component: 'ThankYou'
@@ -46,6 +45,7 @@ class Home extends React.Component {
               this.setState({
                 Component: 'EventPage',
                 Url: e.url,
+                videoUrl: e.videoUrl,
               });
             } else {
               this.setState({
@@ -116,7 +116,7 @@ class Home extends React.Component {
     let Component = AllPage[this.state.Component];
     return (
       <div className="App">
-          { this.state.Component.length > 0 && <Component Url={this.state.Url} Time={this.state.Time} EventId={this.state.EventId} location={this.props.location}/> }
+          { this.state.Component.length > 0 && <Component videoUrl={this.state.videoUrl} Url={this.state.Url} Time={this.state.Time} EventId={this.state.EventId} location={this.props.location}/> }
       </div>
     )
   }
