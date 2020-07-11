@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import io from 'socket.io-client';
 import { endPoint } from '../socket/allSockets';
-import { postAPI, putAPI, getAPI, getPublicAPI } from '../Api/Api';
+import { postAPI, putAPI, getAPI, getPublicAPI, delAPI } from '../Api/Api';
 import ToggleButton from 'react-toggle-button';
 import { getLocalStorage, getKey } from '../Api/LocalStorage';
 import Datetime from 'react-datetime';
@@ -189,13 +189,18 @@ class Configrator extends React.Component {
   }
 
   removePoll(val) {
-    let arr = {
-      id: val.id,
-    }
-    postAPI('removePoll', arr)
+    if (!window.confirm(`Do you want to delete poll-${val['id']} ?`)) return '';
+
+    delAPI(`survey/removePoll/${val['id']}`,{})
       .then(e => {
-        console.log(e);
-        //
+        const { status, message } = e.data;
+        console.log("Status : ",status,"---",message)
+        if(status === 1 && message === "Deleted"){
+          alert('Poll is Deleted Successfully....')
+          window.location.reload();
+        }else{
+          alert('Poll is Not Deleted')
+        }
       });
   }
 

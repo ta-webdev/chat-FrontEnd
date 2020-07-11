@@ -5,6 +5,7 @@ import { sendMessage } from '../socket/allSockets';
 import { getLocalStorage } from '../Api/LocalStorage';
 import { postAPI } from '../Api/Api';
 import $ from 'jquery';
+import "./Event/Event.scss";
 
 import Hls from "hls.js"
 import Plyr from "plyr"
@@ -172,6 +173,11 @@ class EventPage extends React.Component {
     return (
       <>
         <section className="EventPage">
+          <div className="orientation w-100 h-100 position-absolute">
+            <div className="gif h-100 w-100 d-flex align-items-center justify-content-center">
+              <img src="https://balimicorp.com/site_assets/images/rotate.gif"/>
+            </div>
+          </div>
           <div className="banner background-Black">
             { this.state.overlayState && !this.state.playState && <img src="https://img.icons8.com/officel/256/000000/circled-play.png" className="position-absolute play-btn" onClick={() => this.handleVideoStart()}
             /> }

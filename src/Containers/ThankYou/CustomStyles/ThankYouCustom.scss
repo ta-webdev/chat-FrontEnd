@@ -793,3 +793,115 @@
         }
     }
 }
+
+// Event 119
+.ThankYou.Event119 {
+    width: 100%;
+    height: 100%;
+    
+    .Header{
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        height: auto;
+    }
+    
+    .content-holder {
+        height: 95vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder {
+            .Image{
+                max-width: 700px;
+            }
+        }
+
+        .footer-img-holder{
+            height: 20vh;
+            top: calc(80vh - 80px);
+        }
+    }
+
+    .thankyou-image-holder {
+        align-items: flex-start !important;
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        .Image{
+            max-height: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    .ThankYou.Event119 {
+
+        .content-holder{
+
+            .event-logo-holder{
+                height: 35vh;
+            }
+
+            .thankyou-image-holder{
+                height: 45vh;
+                .Image{
+                    max-height: 70%;
+                }
+            }
+
+            .footer-img-holder{
+                top: calc(85vh - 90px);
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .ThankYou.Event119 {
+
+     .Header{
+         height: 15vh;
+         .Image {
+             width: 20% !important;
+            }
+      }
+      .content-holder{
+          height: 85vh;
+          
+          .event-logo-holder{
+              height: 25vh;
+          }
+          
+          .thankyou-image-holder{
+              height: 40vh ;
+              width: 95% ;
+          }
+      }    
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape) {
+    .ThankYou.Event119 {
+        
+        .Header{
+            height: 20vh;
+            .Image {
+                width: 10% !important;
+               }
+         }
+
+         .content-holder{
+             height: 95vh;
+            justify-content: flex-start !important;
+           
+            .thankyou-image-holder{
+                height: 50vh;
+            }
+
+            .footer-img-holder{
+                top: calc(100vh - 100px);
+            }
+         }
+
+    }
+}

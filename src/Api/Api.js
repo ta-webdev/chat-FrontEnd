@@ -42,3 +42,10 @@ export const getPublicAPI = (path) => {
     headers: { 'content-type': 'application/json' },
   })
 }
+
+export const delAPI = (path) => {
+  let url = Baseurl + path;
+  return axios.delete(url, {
+    headers: { 'content-type': 'application/json' },
+  })
+}

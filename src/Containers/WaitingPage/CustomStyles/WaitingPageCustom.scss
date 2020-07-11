@@ -1696,3 +1696,230 @@
         }
     }
 }
+
+// EVENT 119
+.WaitingPage.Event119{
+    
+    .Header{
+        justify-content: flex-start !important;
+        height: 15vh;
+    }
+    
+    .content-holder{
+        height: 85vh;
+        justify-content: flex-start !important;
+
+        .event-logo-holder{
+            width: 500px;
+        }
+
+        .go-live-holder{  
+                
+            .go-live-img-holder{
+                width: 80%;
+                height: 40%;
+                max-width: 100%;
+                .going-live-img img{
+                    max-width: 80%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .timer-holder {
+                font-family: 'Digital-7';
+
+                .timer-bg {                  
+                   
+                    .timer-text {
+                        position: inherit;
+                        width: 350px;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .timer-text {
+                        div {
+                            padding: 0 !important;
+                            
+                        }
+
+                        .time div {
+                            font-size: 5rem;
+                            color: #e62f2d;
+                        }
+
+                        .time-desc div {
+                            font-size: 2rem;
+                            color: #000000;
+                        }
+                    }
+
+                }
+            }
+        }
+     }
+}
+
+@media only screen and (max-width: 1376px) {
+    .WaitingPage.Event119{
+
+        .content-holder{ 
+            .event-logo-holder{
+                max-width: 350px !important;
+            }
+            .go-live-holder{
+                width: 100%;
+                height: 45%;
+                .go-live-img-holder{
+                    .going-live-img img{
+                        max-width: 90%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 3.1rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 2.1rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .WaitingPage.Event119{
+
+        .Header{
+            .Image{
+                width: 25% !important;
+            }
+        }
+        .content-holder{ 
+            .event-logo-holder{
+                max-width: 300px !important;
+            }
+            .go-live-holder{
+                .go-live-img-holder{
+                    .going-live-img img{
+                        max-width: 100%;
+                        margin: 0;
+                    }
+                }
+                .timer-holder{
+                    
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                        }
+                        .timer-text .time div{
+                            font-size: 2.5rem;
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.5rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape)  {
+    .WaitingPage.Event119{
+
+        .Header{
+            .Image{
+                width: 10% !important;
+            }
+        }
+
+        .content-holder{
+            .event-logo-holder{
+                width: 200px;
+                max-width: 300px;
+            }
+            
+            .go-live-holder{
+                height: 25%;
+                .go-live-img-holder{
+                    height: 60%;
+                    max-width: 900px;
+                    background-repeat: repeat;
+                    .going-live-img img{
+                        max-width: 100%;
+                    }
+                }
+    
+                .timer-holder{
+                    
+                    .timer-bg{
+                        .timer-text{
+                            width: 230px;
+                            margin: 0;
+                        }
+                        .timer-text .time div{
+                            font-size: 2.3rem;
+                            white-space: nowrap;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 1.4rem;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+         }
+    }
+}
+// IphoneSE only
+@media only screen and (min-width: 560px) and (max-width: 568px) and (orientation: landscape){
+    
+    .WaitingPage.Event119{
+
+        .content-holder{
+            
+            .event-logo-holder{
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
+    .WaitingPage.Event119{
+
+        .content-holder{
+
+            .go-live-holder{
+                  
+                .timer-holder{
+                    
+                    .timer-bg{
+                        .timer-text{
+                            width: 430px;
+                        }
+                        .timer-text .time div{
+                            font-size: 4rem;
+                            white-space: nowrap;
+    
+                        }
+                        .timer-text .time-desc div{
+                            font-size: 3rem;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

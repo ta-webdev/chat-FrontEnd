@@ -1,0 +1,40 @@
+.EventPage{
+    
+    .orientation{
+        display: none;
+        top: 0;
+        z-index: 2;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px)  {
+    .EventPage{
+
+        .orientation{
+            display: block;
+            background-color: #000000;
+        }
+
+        .banner{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) and (orientation: landscape){
+    .EventPage{
+
+        .orientation{
+            display: none;
+        }
+
+        .banner, .blackOverlay{
+            display: block;
+        }
+    }
+
+}

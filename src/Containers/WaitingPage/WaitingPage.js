@@ -61,7 +61,7 @@ const WaitingPage = props => {
                         <Image src={eventTemplate && eventTemplate.waiting.goingLiveImg} alt="going-live-img" cls="going-live-img"/>
                     </div>
                     <div className="timer-holder d-flex justify-content-center align-items-center">
-                        <Image src={eventTemplate && eventTemplate.waiting.timerBg} alt="timer-bg" cls="timer-bg position-relative">
+                        <Image src={eventTemplate && eventTemplate.waiting.timerBg} cls="timer-bg position-relative">
                             <div className="timer-text d-flex justify-content-start align-items-center flex-column text-white">
                                 <div className="row w-100 h-50 time font-weight-bold d-flex justify-content-around align-itmes-center">
                                     <div className="col-3 m-0 text-center">{hourState}</div>
@@ -81,8 +81,8 @@ const WaitingPage = props => {
                         </Image>
                     </div>  
                 </div>  
-                { eventTemplate && eventTemplate.footerImg.length > 0 && <div className="footer-img-holder position-absolute w-100 d-flex align-items-center justify-content-center">
-                <Image src={eventTemplate.footerImg} cls={"footer-image"}/>
+                { eventTemplate && eventTemplate.waiting.footerImg.length > 0 && <div className="footer-img-holder position-absolute w-100 d-flex align-items-center justify-content-center">
+                <Image src={eventTemplate.waiting.footerImg} cls={"footer-image"}/>
             </div> }
             </div>
         </div>
