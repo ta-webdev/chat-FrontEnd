@@ -174,8 +174,12 @@ class EventPage extends React.Component {
       <>
         <section className="EventPage">
           <div className="orientation w-100 h-100 position-absolute">
-            <div className="gif h-100 w-100 d-flex align-items-center justify-content-center">
+            <div className="gif h-100 w-100 d-flex align-items-center justify-content-center flex-column">
               <img src="https://balimicorp.com/site_assets/images/rotate.gif"/>
+              <div className="inform_text d-flex align-items-center justify-content-around flex-column w-75 h-50">
+                <p className="text-white text-center">Please rotate your device to landscape mode to continue the event.</p>
+                <p className="text-white text-center">If screen does not rotate, make sure your screen orientation is unlocked.</p>
+              </div>
             </div>
           </div>
           <div className="banner background-Black">
